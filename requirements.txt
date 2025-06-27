@@ -10,7 +10,7 @@ sentence-transformers
 huggingface_hub
 
 # Web app frontend
-streamlit
+streamlit>=1.10.0
 
 # For multilingual support (bonus)
 translate
