@@ -48,9 +48,9 @@ def rag_answer(user_query, return_prompt=False):
     prompt = (
         f"User question: {user_query}\n\n"
         f"Relevant FAQ:\nQ: {retrieved['question']}\nA: {retrieved['answer']}\n\n"
-        "If the FAQ is relevant, answer in a friendly way. If not, try to answer or say you don't know. "
-        "If the user is greeting (e.g., 'hello', 'hi', 'how are you'), greet back and ask if they have any queries about Jupiter Money. Do not answer with unrelated FAQ content. "
-        "Start your answer with 'FINAL ANSWER:'."
+        "Respond conversationally. If the user greets, greet back and ask if they have questions about Jupiter Money. "
+        "If the FAQ is relevant, answer using its info. If not, say you don't know. "
+        "Start your reply with 'FINAL ANSWER:' and output only the answer."
     )
     llm_response = query_huggingface_llm(prompt)
     # Improved extraction: look for FINAL ANSWER:, then A:/Answer:, then fallback to last paragraph
