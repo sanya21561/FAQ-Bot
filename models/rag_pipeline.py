@@ -49,6 +49,7 @@ def rag_answer(user_query, return_prompt=False):
         f"User question: {user_query}\n\n"
         f"Relevant FAQ:\nQ: {retrieved['question']}\nA: {retrieved['answer']}\n\n"
         "If the FAQ is relevant, answer in a friendly way. If not, try to answer or say you don't know. "
+        "If the user is greeting (e.g., 'hello', 'hi', 'how are you'), greet back and ask if they have any queries about Jupiter Money. Do not answer with unrelated FAQ content. "
         "Start your answer with 'FINAL ANSWER:'."
     )
     llm_response = query_huggingface_llm(prompt)
@@ -58,7 +59,15 @@ def rag_answer(user_query, return_prompt=False):
         matches = list(re.finditer(r'FINAL ANSWER:\s*', llm_response, re.IGNORECASE))
         if matches:
             last_match = matches[-1].end()
-            return llm_response[last_match:].strip()
+            after_final = llm_response[last_match:]
+            # If only one FINAL ANSWER:, check for A: or Answer: at the start
+            a_match = re.match(r"[\s\.'\"]*(A:|Answer:)\s*", after_final, re.IGNORECASE)
+            if a_match:
+                return after_final[a_match.end():].strip()
+            # If starts with stray .', skip first two chars
+            if after_final.strip().startswith(".'"):
+                return after_final.strip()[2:].strip()
+            return after_final.strip()
         # Try A: or Answer:
         matches = list(re.finditer(r'(?i)\b(A:|Answer:)\s*', llm_response))
         if matches:
