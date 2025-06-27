@@ -27,13 +27,25 @@ def retrieve_faq(query, top_k=1):
     for idx in I[0]:
         results.append({
             'question': questions[idx],
-            'answer': answers[idx]
+            'answer': answers[idx],
+            'index': idx
         })
     return results
+
+def get_related_questions(query, exclude_idx, top_k=3):
+    query_emb = model.encode([query]).astype('float32')
+    D, I = index.search(query_emb, top_k + 1)  # +1 in case best match is included
+    related = []
+    for idx in I[0]:
+        if idx != exclude_idx and len(related) < top_k:
+            related.append(questions[idx])
+    return related
 
 def rag_answer(user_query, return_prompt=False):
     # Retrieve best FAQ
     retrieved = retrieve_faq(user_query, top_k=1)[0]
+    # Related questions (top 3, excluding best match)
+    related_questions = get_related_questions(user_query, exclude_idx=retrieved['index'], top_k=3)
     # Compose prompt for LLM
     prompt = f"User question: {user_query}\n\nRelevant FAQ:\nQ: {retrieved['question']}\nA: {retrieved['answer']}\n\nIf the FAQ is relevant, answer in a friendly way. If not, try to answer or say you don't know."
     llm_response = query_huggingface_llm(prompt)
@@ -47,7 +59,8 @@ def rag_answer(user_query, return_prompt=False):
         final_answer = llm_response.strip()
     result = {
         'retrieved_faq': retrieved,
-        'llm_response': final_answer
+        'llm_response': final_answer,
+        'related_questions': related_questions
     }
     if return_prompt:
         result['system_prompt'] = prompt
@@ -60,5 +73,8 @@ if __name__ == "__main__":
     print("\n--- Retrieved FAQ ---")
     print(f"Q: {result['retrieved_faq']['question']}")
     print(f"A: {result['retrieved_faq']['answer']}")
+    print("\n--- Related Questions ---")
+    for q in result['related_questions']:
+        print(q)
     print("\n--- LLM Response ---")
     print(result['llm_response']) 
