@@ -1,6 +1,6 @@
 # Jupiter Money FAQ Bot
 
-A human-friendly FAQ bot for Jupiter's Help Centre, built with Python, FAISS for semantic search, and open-source LLM Mistral. The bot scrapes FAQs from Jupiter's help and community pages, preprocesses them, and provides conversational answers via a web app frontend using streamlit.
+A human-friendly FAQ RAG bot for Jupiter's Help Centre, built with Python, FAISS for semantic search, and open-source LLM Mistral. The bot scrapes FAQs from Jupiter's help and community pages, preprocesses them, and provides conversational answers via a web app frontend using streamlit.
 
 ---
 
@@ -47,6 +47,7 @@ A human-friendly FAQ bot for Jupiter's Help Centre, built with Python, FAISS for
 ### 6. Multilingual Output (French Translation)
 ![French Translation Output](images/french.png)
 *User clicks "Translate answer to fr" and receives the answer in French.*
+
 ---
 
 ## 🛠️ Setup
@@ -96,13 +97,6 @@ A human-friendly FAQ bot for Jupiter's Help Centre, built with Python, FAISS for
   - This prompt is sent to the LLM (Mistral-7B-Instruct-v0.2 via HuggingFace Inference API) to generate a conversational, context-aware answer.
   - Only the final answer is shown to the user; the prompt and FAQ context are available in an expandable "thinking process" section.
 
-- **Multilingual Support:**
-  - The app detects the input language using `langdetect`.
-  - If the query is not in English, it is translated to English using the `translate` package before running through the RAG pipeline.
-  - The answer is shown in English by default.
-  - If the original query was not in English, a button appears to translate the answer back to the user's language (e.g., Hindi, French).
-  - This makes the bot accessible to users in multiple languages and demonstrates true multilingual capability.
-
 - **Frontend (Streamlit):**
   - Clean, modern UI for user interaction.
   - Shows only the final answer by default, with an expandable section for transparency (retrieved FAQ, system prompt, etc.).
@@ -112,6 +106,13 @@ A human-friendly FAQ bot for Jupiter's Help Centre, built with Python, FAISS for
 - **Model Details:**
   - **Semantic Search Model:** `sentence-transformers/all-MiniLM-L6-v2`
   - **LLM:** `mistralai/Mistral-7B-Instruct-v0.2` (via HuggingFace Inference API)
+
+- **Bonus: Multilingual Support:**
+  - The app detects the input language using `langdetect`.
+  - If the query is not in English, it is translated to English using the `translate` package before running through the RAG pipeline.
+  - The answer is shown in English by default.
+  - If the original query was not in English, a button appears to translate the answer back to the user's language (e.g., Hindi, French).
+  - This makes the bot accessible to users in multiple languages and demonstrates true multilingual capability.
 
 - **Bonus: Related Query Suggestions:**
   - After answering, the app uses the same FAISS index to find the top 3 most semantically similar FAQ questions (excluding the one already shown).
@@ -160,6 +161,7 @@ A human-friendly FAQ bot for Jupiter's Help Centre, built with Python, FAISS for
 - `models/` - Scripts for semantic search, LLM integration, and RAG pipeline
 - `images/` - Demo screenshots
 - `RAG_vs_LLM_comparison.ipynb` - Notebook for RAG vs. LLM comparison
+- `rag_vs_llm_results.csv` - RAG vs LLM Results
 - `README.md` - Project documentation
 
 
