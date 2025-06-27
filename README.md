@@ -18,7 +18,7 @@ A human-friendly FAQ RAG bot for Jupiter's Help Centre, built with Python, FAISS
 - Related query suggestions (bonus)
 - "Show thinking process" expandable section for transparency including retrieved FAQ and system prompt.
 - RAG vs. LLM comparison notebook and results (bonus)
-- Multilingual support (bonus): Ask questions in Hindi, French, or other languages, and get answers in your preferred language.
+- Multilingual support (bonus): Ask questions in Hindi, French, or other languages, and get answers in your preferred language. (Does not support Hinglish)
 
 ---
 
