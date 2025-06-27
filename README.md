@@ -24,30 +24,29 @@ A human-friendly FAQ bot for Jupiter's Help Centre, built with Python, FAISS for
 
 ## 📸 Demo Screenshots
 
-### 1. Multilingual Input (Hindi to English)
-![Hindi to English Understanding](images/hindi-english.png)
-*The bot understands a Hindi query and answers in English by default.*
-
-### 2. Multilingual Output (Hindi Translation)
-![Hindi Translation Output](images/hindi.png)
-*User clicks "Translate answer to hi" and receives the answer in Hindi.*
-
-### 3. Multilingual Output (French Translation)
-![French Translation Output](images/french.png)
-*User clicks "Translate answer to fr" and receives the answer in French.*
-
-### 4. Final Output
+### 1. Bot Query Output
 ![Example Output](images/answer.png)
 *Standard English answer output.*
 
-### 5. Related Query Suggestions
+### 2. Related Query Suggestions
 ![Related Questions](images/related_questions.png)
 *Shows clickable related questions for easy exploration.*
 
-### 6. Thinking Process (Expandable)
+### 3. Thinking Process (Expandable)
 ![Thinking Process](images/thinking_process.png)
 *Expandable section reveals the retrieved FAQ and system prompt for transparency.*
 
+### 4. Multilingual Input (Hindi to English)
+![Hindi to English Understanding](images/hindi-english.png)
+*The bot understands a Hindi query and answers in English by default.*
+
+### 5. Multilingual Output (Hindi Translation)
+![Hindi Translation Output](images/hindi.png)
+*User clicks "Translate answer to hi" and receives the answer in Hindi.*
+
+### 6. Multilingual Output (French Translation)
+![French Translation Output](images/french.png)
+*User clicks "Translate answer to fr" and receives the answer in French.*
 ---
 
 ## 🛠️ Setup
