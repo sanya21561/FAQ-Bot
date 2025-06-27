@@ -59,7 +59,7 @@ if user_query:
             if cols[i].button(q, key=f"related_{i}"):
                 st.session_state['user_query'] = q
                 st.session_state['translated_answer'] = ''
-                st.experimental_rerun()
+                st.rerun()
     with st.expander("Show thinking process (retrieved FAQ, prompt, etc.)"):
         st.markdown("---")
         st.subheader("Best Match from FAQ")
