@@ -10,7 +10,7 @@ A human-friendly FAQ bot for Jupiter's Help Centre, built with Python, FAISS for
 ---
 
 ## Features
-- Scrapes and structures FAQs from Jupiter's help and community pages
+- Scrapes and structures FAQs from Jupiter's help page
 - Cleans, deduplicates, and categorizes Q&A pairs
 - Semantic search using FAISS and sentence-transformers
 - Conversational answers using open-source LLMs (via HuggingFace Inference API)
@@ -18,19 +18,35 @@ A human-friendly FAQ bot for Jupiter's Help Centre, built with Python, FAISS for
 - Related query suggestions (bonus)
 - "Show thinking process" expandable section for transparency including retrieved FAQ and system prompt.
 - RAG vs. LLM comparison notebook and results (bonus)
+- Multilingual support (bonus): Ask questions in Hindi, French, or other languages, and get answers in your preferred language.
 
 ---
 
 ## 📸 Demo Screenshots
 
-### 1. Final Output
+### 1. Multilingual Input (Hindi to English)
+![Hindi to English Understanding](images/hindi-english.png)
+*The bot understands a Hindi query and answers in English by default.*
+
+### 2. Multilingual Output (Hindi Translation)
+![Hindi Translation Output](images/hindi.png)
+*User clicks "Translate answer to hi" and receives the answer in Hindi.*
+
+### 3. Multilingual Output (French Translation)
+![French Translation Output](images/french.png)
+*User clicks "Translate answer to fr" and receives the answer in French.*
+
+### 4. Final Output
 ![Example Output](images/answer.png)
+*Standard English answer output.*
 
-### 2. Related Query Suggestions
+### 5. Related Query Suggestions
 ![Related Questions](images/related_questions.png)
+*Shows clickable related questions for easy exploration.*
 
-### 3. Thinking Process (Expandable)
+### 6. Thinking Process (Expandable)
 ![Thinking Process](images/thinking_process.png)
+*Expandable section reveals the retrieved FAQ and system prompt for transparency.*
 
 ---
 
@@ -81,10 +97,18 @@ A human-friendly FAQ bot for Jupiter's Help Centre, built with Python, FAISS for
   - This prompt is sent to the LLM (Mistral-7B-Instruct-v0.2 via HuggingFace Inference API) to generate a conversational, context-aware answer.
   - Only the final answer is shown to the user; the prompt and FAQ context are available in an expandable "thinking process" section.
 
+- **Multilingual Support:**
+  - The app detects the input language using `langdetect`.
+  - If the query is not in English, it is translated to English using the `translate` package before running through the RAG pipeline.
+  - The answer is shown in English by default.
+  - If the original query was not in English, a button appears to translate the answer back to the user's language (e.g., Hindi, French).
+  - This makes the bot accessible to users in multiple languages and demonstrates true multilingual capability.
+
 - **Frontend (Streamlit):**
   - Clean, modern UI for user interaction.
   - Shows only the final answer by default, with an expandable section for transparency (retrieved FAQ, system prompt, etc.).
   - Related questions are shown as clickable buttons for easy exploration.
+  - Multilingual support is seamlessly integrated into the user experience.
 
 - **Model Details:**
   - **Semantic Search Model:** `sentence-transformers/all-MiniLM-L6-v2`
