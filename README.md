@@ -38,7 +38,7 @@ A human-friendly FAQ bot for Jupiter's Help Centre, built with Python, FAISS for
 
 1. **Clone the repo and navigate to the project directory:**
    ```bash
-   git clone <repo-url>
+   git clone https://github.com/sanya21561/FAQ-Bot
    cd FAQ-Bot
    ```
 2. **Create and activate a virtual environment:**
