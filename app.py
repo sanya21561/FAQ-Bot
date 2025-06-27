@@ -32,9 +32,14 @@ if user_query:
         except Exception:
             query_for_rag = user_query
     with st.spinner("Thinking..."):
-        result = rag_answer(query_for_rag, return_prompt=True)
+        try:
+            result = rag_answer(query_for_rag, return_prompt=True)
+            answer = result['llm_response']
+        except Exception as e:
+            answer = "Sorry, the model is taking too long to respond. Please try again later."
+            result = {'llm_response': answer, 'retrieved_faq': {'question': '', 'answer': ''}, 'related_questions': [], 'system_prompt': ''}
     st.subheader("Bot's Answer")
-    st.markdown(result['llm_response'])
+    st.markdown(answer)
     # Option to translate answer back to original language
     if detected_lang != 'en':
         if st.button(f"Translate answer to {detected_lang}"):
