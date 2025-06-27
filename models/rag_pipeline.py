@@ -55,21 +55,29 @@ def rag_answer(user_query, return_prompt=False):
     llm_response = query_huggingface_llm(prompt)
     # Improved extraction: look for FINAL ANSWER:, then A:/Answer:, then fallback to last paragraph
     def extract_final_answer(llm_response):
-        # Try FINAL ANSWER: (use last occurrence)
+        # Look for all occurrences of FINAL ANSWER:
         matches = list(re.finditer(r'FINAL ANSWER:\s*', llm_response, re.IGNORECASE))
         if matches:
-            last_match = matches[-1].end()
-            after_final = llm_response[last_match:]
-            # If only one FINAL ANSWER:, check for A: or Answer: at the start
-            a_match = re.match(r"[\s\.'\"]*(A:|Answer:)\s*", after_final, re.IGNORECASE)
-            if a_match:
-                return after_final[a_match.end():].strip()
-            # If starts with stray .', skip first two chars
-            if after_final.strip().startswith(".'"):
-                return after_final.strip()[2:].strip()
-            return after_final.strip()
-        # Try A: or Answer:
-        matches = list(re.finditer(r'(?i)\b(A:|Answer:)\s*', llm_response))
+            if len(matches) >= 2:
+                # Start after the second occurrence
+                start = matches[1].end()
+                after_final = llm_response[start:]
+            else:
+                # Only one occurrence
+                start = matches[0].end()
+                after_final = llm_response[start:]
+                # Look for A: or Answer: or ANSWER: after FINAL ANSWER:
+                a_match = re.search(r'(A:|Answer:|ANSWER:)\s*', after_final, re.IGNORECASE)
+                if a_match:
+                    return after_final[a_match.end():].strip()
+                # If next two chars are .', skip them
+                if after_final.strip().startswith(".'"):
+                    return after_final.strip()[2:].strip()
+            # Remove leading punctuation/quotes/whitespace
+            cleaned = re.sub(r"^[\s\.'\"-]+", "", after_final)
+            return cleaned.strip()
+        # Try A: or Answer: in the whole response
+        matches = list(re.finditer(r'(?i)\b(A:|Answer:|ANSWER:)\s*', llm_response))
         if matches:
             last_match = matches[-1].end()
             return llm_response[last_match:].strip()
