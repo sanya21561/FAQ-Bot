@@ -54,10 +54,11 @@ def rag_answer(user_query, return_prompt=False):
     llm_response = query_huggingface_llm(prompt)
     # Improved extraction: look for FINAL ANSWER:, then A:/Answer:, then fallback to last paragraph
     def extract_final_answer(llm_response):
-        # Try FINAL ANSWER:
-        match = re.search(r'FINAL ANSWER:\s*(.*)', llm_response, re.IGNORECASE | re.DOTALL)
-        if match:
-            return match.group(1).strip()
+        # Try FINAL ANSWER: (use last occurrence)
+        matches = list(re.finditer(r'FINAL ANSWER:\s*', llm_response, re.IGNORECASE))
+        if matches:
+            last_match = matches[-1].end()
+            return llm_response[last_match:].strip()
         # Try A: or Answer:
         matches = list(re.finditer(r'(?i)\b(A:|Answer:)\s*', llm_response))
         if matches:
