@@ -30,16 +30,19 @@ def retrieve_faq(query, top_k=1):
         })
     return results
 
-def rag_answer(user_query):
+def rag_answer(user_query, return_prompt=False):
     # Retrieve best FAQ
     retrieved = retrieve_faq(user_query, top_k=1)[0]
     # Compose prompt for LLM
     prompt = f"User question: {user_query}\n\nRelevant FAQ:\nQ: {retrieved['question']}\nA: {retrieved['answer']}\n\nIf the FAQ is relevant, answer in a friendly way. If not, try to answer or say you don't know."
     llm_response = query_huggingface_llm(prompt)
-    return {
+    result = {
         'retrieved_faq': retrieved,
         'llm_response': llm_response
     }
+    if return_prompt:
+        result['system_prompt'] = prompt
+    return result
 
 if __name__ == "__main__":
     user_query = input("Ask a question: ")
