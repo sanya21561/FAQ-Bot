@@ -17,3 +17,6 @@ translate
 
 # Data handling
 pandas
+
+# Additional language detection
+langdetect
