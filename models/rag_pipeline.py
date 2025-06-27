@@ -37,14 +37,12 @@ def rag_answer(user_query, return_prompt=False):
     # Compose prompt for LLM
     prompt = f"User question: {user_query}\n\nRelevant FAQ:\nQ: {retrieved['question']}\nA: {retrieved['answer']}\n\nIf the FAQ is relevant, answer in a friendly way. If not, try to answer or say you don't know."
     llm_response = query_huggingface_llm(prompt)
-    # Extract only the final answer after the last 'A:'
+    # Extract only the final answer after the last 'A:' or 'Answer:' (case-insensitive)
     final_answer = llm_response
-    # Try to extract after the last 'A:'
-    matches = list(re.finditer(r'\bA:\s*', llm_response))
+    matches = list(re.finditer(r'(?i)\b(A:|Answer:)\s*', llm_response))
     if matches:
-        last_a = matches[-1].end()
-        final_answer = llm_response[last_a:].strip()
-    # If nothing after 'A:', fallback to the whole response
+        last_match = matches[-1].end()
+        final_answer = llm_response[last_match:].strip()
     if not final_answer:
         final_answer = llm_response.strip()
     result = {
