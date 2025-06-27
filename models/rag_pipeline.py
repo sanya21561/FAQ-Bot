@@ -3,6 +3,7 @@ import numpy as np
 import faiss
 from sentence_transformers import SentenceTransformer
 from .llm_inference import query_huggingface_llm
+import re
 
 MODEL_NAME = 'all-MiniLM-L6-v2'
 DATA_PATH = 'data/jupiter_faqs_clean.json'
@@ -36,12 +37,23 @@ def rag_answer(user_query, return_prompt=False):
     # Compose prompt for LLM
     prompt = f"User question: {user_query}\n\nRelevant FAQ:\nQ: {retrieved['question']}\nA: {retrieved['answer']}\n\nIf the FAQ is relevant, answer in a friendly way. If not, try to answer or say you don't know."
     llm_response = query_huggingface_llm(prompt)
+    # Extract only the final answer after the last 'A:'
+    final_answer = llm_response
+    # Try to extract after the last 'A:'
+    matches = list(re.finditer(r'\bA:\s*', llm_response))
+    if matches:
+        last_a = matches[-1].end()
+        final_answer = llm_response[last_a:].strip()
+    # If nothing after 'A:', fallback to the whole response
+    if not final_answer:
+        final_answer = llm_response.strip()
     result = {
         'retrieved_faq': retrieved,
-        'llm_response': llm_response
+        'llm_response': final_answer
     }
     if return_prompt:
         result['system_prompt'] = prompt
+        result['raw_llm_response'] = llm_response
     return result
 
 if __name__ == "__main__":
