@@ -97,3 +97,4 @@ venv.bak/
 *.pdf
 *.csv
 *.json
+!data/jupiter_faqs_raw.json

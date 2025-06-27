@@ -25,10 +25,10 @@ def main():
     url = 'https://jupiter.money/contact/'
     print(f"Scraping: {url}")
     faqs = scrape_jupiter_contact_faq(url)
-    os.makedirs('../data', exist_ok=True)
-    with open('../data/jupiter_faqs_raw.json', 'w') as f:
+    os.makedirs('data', exist_ok=True)
+    with open('data/jupiter_faqs_raw.json', 'w') as f:
         json.dump(faqs, f, indent=2, ensure_ascii=False)
-    print(f"Saved {len(faqs)} Q&A pairs to ../data/jupiter_faqs_raw.json")
+    print(f"Saved {len(faqs)} Q&A pairs to data/jupiter_faqs_raw.json")
 
 if __name__ == "__main__":
     main() 
