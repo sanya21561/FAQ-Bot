@@ -2,7 +2,7 @@ import json
 import numpy as np
 import faiss
 from sentence_transformers import SentenceTransformer
-from llm_inference import query_huggingface_llm
+from .llm_inference import query_huggingface_llm
 
 MODEL_NAME = 'all-MiniLM-L6-v2'
 DATA_PATH = 'data/jupiter_faqs_clean.json'
