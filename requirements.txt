@@ -1,0 +1,19 @@
+# Web scraping
+requests
+beautifulsoup4
+
+# Semantic search
+faiss-cpu
+sentence-transformers
+
+# LLM API (HuggingFace)
+huggingface_hub
+
+# Web app frontend
+streamlit
+
+# For multilingual support (bonus)
+translate
+
+# Data handling
+pandas
