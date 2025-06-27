@@ -99,3 +99,4 @@ venv.bak/
 *.json
 !data/jupiter_faqs_raw.json
 !data/jupiter_faqs_clean.json
+!rag_vs_llm_results.csv
