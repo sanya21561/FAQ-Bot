@@ -94,7 +94,7 @@ A human-friendly FAQ RAG bot for Jupiter's Help Centre, built with Python, FAISS
 
 - **RAG Pipeline:**
   - The user query and the best-matching FAQ (from FAISS) are combined into a prompt.
-  - This prompt is sent to the LLM (Mistral-7B-Instruct-v0.2 via HuggingFace Inference API) to generate a conversational, context-aware answer.
+  - This prompt is sent to the LLM (Mistral-7B-Instruct-v0.3 via HuggingFace Inference API) to generate a conversational, context-aware answer.
   - Only the final answer is shown to the user; the prompt and FAQ context are available in an expandable "thinking process" section.
 
 - **Frontend (Streamlit):**
