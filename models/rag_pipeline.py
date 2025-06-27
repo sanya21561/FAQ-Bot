@@ -44,23 +44,35 @@ def get_related_questions(query, exclude_idx, top_k=3):
 def rag_answer(user_query, return_prompt=False):
     # Retrieve best FAQ
     retrieved = retrieve_faq(user_query, top_k=1)[0]
-    # Related questions (top 3, excluding best match)
-    related_questions = get_related_questions(user_query, exclude_idx=retrieved['index'], top_k=3)
     # Compose prompt for LLM
-    prompt = f"User question: {user_query}\n\nRelevant FAQ:\nQ: {retrieved['question']}\nA: {retrieved['answer']}\n\nIf the FAQ is relevant, answer in a friendly way. If not, try to answer or say you don't know."
+    prompt = (
+        f"User question: {user_query}\n\n"
+        f"Relevant FAQ:\nQ: {retrieved['question']}\nA: {retrieved['answer']}\n\n"
+        "If the FAQ is relevant, answer in a friendly way. If not, try to answer or say you don't know. "
+        "Start your answer with 'FINAL ANSWER:'."
+    )
     llm_response = query_huggingface_llm(prompt)
-    # Extract only the final answer after the last 'A:' or 'Answer:' (case-insensitive)
-    final_answer = llm_response
-    matches = list(re.finditer(r'(?i)\b(A:|Answer:)\s*', llm_response))
-    if matches:
-        last_match = matches[-1].end()
-        final_answer = llm_response[last_match:].strip()
-    if not final_answer:
-        final_answer = llm_response.strip()
+    # Improved extraction: look for FINAL ANSWER:, then A:/Answer:, then fallback to last paragraph
+    def extract_final_answer(llm_response):
+        # Try FINAL ANSWER:
+        match = re.search(r'FINAL ANSWER:\s*(.*)', llm_response, re.IGNORECASE | re.DOTALL)
+        if match:
+            return match.group(1).strip()
+        # Try A: or Answer:
+        matches = list(re.finditer(r'(?i)\b(A:|Answer:)\s*', llm_response))
+        if matches:
+            last_match = matches[-1].end()
+            return llm_response[last_match:].strip()
+        # Fallback: last paragraph
+        paras = [p.strip() for p in llm_response.split('\n') if p.strip()]
+        if paras:
+            return paras[-1]
+        return llm_response.strip()
+    final_answer = extract_final_answer(llm_response)
     result = {
         'retrieved_faq': retrieved,
         'llm_response': final_answer,
-        'related_questions': related_questions
+        'related_questions': get_related_questions(user_query, exclude_idx=retrieved['index'], top_k=3)
     }
     if return_prompt:
         result['system_prompt'] = prompt
