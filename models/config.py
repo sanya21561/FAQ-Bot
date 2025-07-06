@@ -3,7 +3,6 @@ Configuration file for Together API and model settings
 """
 import os
 # Together API Configuration
-# TOGETHER_API_KEY = "e5a55b47c8e2bf0602028d5506d58d19e331d3fb2b59f8c180bcf65a5cb7ba5c"
 TOGETHER_API_KEY = os.getenv('TOGETHER_API_KEY')
 TOGETHER_API_URL = "https://api.together.xyz/v1/chat/completions"
 
