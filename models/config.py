@@ -12,9 +12,9 @@ DEFAULT_MODEL = "meta-llama/Llama-3.3-70B-Instruct-Turbo"
 
 # Alternative models:
 # - "meta-llama/Llama-3.1-8B-Instruct" (faster, smaller)
-# - "meta-llama/Llama-3.1-70B-Instruct" (larger, more capable)
 # - "microsoft/DialoGPT-medium" (conversational)
 # - "google/gemma-7b-it" (Gemma model)
+# - "mistralai/Mistral-7B-Instruct-v0.3" (Mistral model)
 
 # Generation Parameters
 MAX_TOKENS = 1000

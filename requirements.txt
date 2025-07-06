@@ -6,17 +6,13 @@ beautifulsoup4
 faiss-cpu
 sentence-transformers
 
-# LLM API (HuggingFace)
-huggingface_hub
-
 # Web app frontend
 streamlit>=1.10.0
 
 # For multilingual support (bonus)
 translate
+langdetect
 
 # Data handling
 pandas
-
-# Additional language detection
-langdetect
+datasketch
