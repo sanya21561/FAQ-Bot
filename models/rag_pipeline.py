@@ -2,7 +2,7 @@ import json
 import numpy as np
 import faiss
 from sentence_transformers import SentenceTransformer
-from .llm_inference import query_huggingface_llm
+from .together_inference import query_together_llm
 import re
 
 MODEL_NAME = 'all-MiniLM-L6-v2'
@@ -52,7 +52,7 @@ def rag_answer(user_query, return_prompt=False):
         "If the FAQ is relevant, answer using its info. If not, say you don't know. "
         "Start your reply with 'FINAL ANSWER:' and output only the answer."
     )
-    llm_response = query_huggingface_llm(prompt)
+    llm_response = query_together_llm(prompt)
     # Improved extraction: look for FINAL ANSWER:, then A:/Answer:, then fallback to last paragraph
     def extract_final_answer(llm_response):
         # Look for all occurrences of FINAL ANSWER:

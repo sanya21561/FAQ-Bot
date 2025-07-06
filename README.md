@@ -66,9 +66,9 @@ A human-friendly FAQ RAG bot for Jupiter's Help Centre, built with Python, FAISS
    ```bash
    pip install -r requirements.txt
    ```
-4. **Set your HuggingFace API key:**
+4. **Set your Together AI API key:**
    ```bash
-   export HF_API_KEY=your_actual_huggingface_api_key
+   export TOGETHER_API_KEY=your-together-api-key-here
    ```
 5. **Run the app:**
    ```bash

@@ -68,4 +68,4 @@ if user_query:
         st.subheader("System Prompt to LLM")
         st.code(result['system_prompt'], language='markdown')
         st.markdown("---")
-    st.info("Powered by FAISS, Sentence Transformers, and HuggingFace LLMs.") 
+    st.info("Powered by FAISS, Sentence Transformers, and Together AI LLMs.") 
