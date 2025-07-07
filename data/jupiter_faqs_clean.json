@@ -1,46 +1,862 @@
-[
-  {
-    "question": "what is jupiter money?",
-    "answer": "Jupiter is the 1-app for everything money that lets you spend and save money, track expenses, pay bills, and invest money in Direct Mutual Funds. It enables you to make smart money decisions every day using easy, intuitive, and personalized money management tools by eliminating the stress, fear and confusion that comes with managing money"
+{
+  "General": [
+    {
+      "question": "what is jupiter money?",
+      "answer": "Jupiter is the 1-app for everything money that lets you spend and save money, track expenses, pay bills, and invest money in Direct Mutual Funds. It enables you to make smart money decisions every day using easy, intuitive, and personalized money management tools by eliminating the stress, fear and confusion that comes with managing money"
+    },
+    {
+      "question": "is 'jupiter bank' approved by the rbi?",
+      "answer": "Jupiter is itself not a bank and doesn't hold or claim to hold a banking license. The Savings Account and VISA Debit Card are provided by Federal Bank - an RBI-licensed bank - and follow all security standards prescribed by RBI. All funds in your account are insured under the RBI's deposit insurance scheme. Your money is always safe with Federal Bank"
+    },
+    {
+      "question": "how can i open a savings account?",
+      "answer": "To open a free Savings or Salary Bank Account on Jupiter - powered by Federal Bank - in 3 minutes, simply install the Jupiter App. Follow the on-screen instructions to create your account. To unlock the full Jupiter experience, complete your KYC in 5 minutes"
+    },
+    {
+      "question": "how can i get a debit card?",
+      "answer": "You can order a new physical Debit Card by tapping on the 'Card' tab on the Jupiter app. While you can get a virtual Debit Card for free, you will be charged a one-time fee when ordering a physical Debit Card"
+    },
+    {
+      "question": "how to deposit cash in the savings account?",
+      "answer": "To deposit cash into your Savings or Salary Bank Account, visit any Federal Bank branch. You can find the nearest branch here: https://locations.federalbank.co.in/"
+    },
+    {
+      "question": "how can i transfer money from jupiter?",
+      "answer": "There are many ways to transfer money from Jupiter. You may use the Scan & Pay for UPI transfers, pay via your Debit Card, or use your Cheque Book for sending money. You can also use Bank Transfers on Jupiter to transfer money. Jupiter offers 4 different modes for bank transfers - 1. Internal Fund transfer (for Inter Bank) 2. NEFT 3. IMPS 4. RTGS Jupiter automatically selects the best mode for transfer when you enter payee and transaction information You can see all information regarding transfer Fees and Charges here"
+    },
+    {
+      "question": "is jupiter a bank?",
+      "answer": "Jupiter is itself not a bank and doesn't hold or claim to hold a banking license. The Savings Account and VISA Debit Card are provided by Federal Bank and follows all security standards as applicable. All funds in your account are insured up to the approved limit by DICGC. Your money is always safe with Federal Bank Jupiter enables you to make smart money decisions every day using easy, intuitive, and personalized money management tools that help eliminate the stress, fear and confusion that comes with managing money. You can start using Jupiter by doing any of the following… Opening a free no minimum balance Savings Bank Account on Jupiter - powered by Federal Bank - in 3 minutes Get 5x Cashback on spends* Or, opening a free Salary Bank Account on Jupiter - powered by Federal Bank Withdraw your salary any day with On-Demand Salary Get free health insurance up to Rs. 2,00,000 Get 5x Cashback on spends*"
+    },
+    {
+      "question": "what is jupiter's whatsapp number?",
+      "answer": "Jupiter at the moment doesn't offer WhatsApp support. For any help or feedback, you can chat with us via the Jupiter app for instant support. You can also email us at support@jupiter.money or call us on our helpline number"
+    },
+    {
+      "question": "how can i apply for a credit card on jupiter",
+      "answer": "You can apply for the Edge Federal Bank Credit Card or Edge CSB Bank Credit Card exclusively on Jupiter"
+    },
+    {
+      "question": "how can i get a federal bank passbook?",
+      "answer": "You can request for a passbook by visiting your nearest Federal Bank branch. Please note that the passbook is chargeable and is available only to verified account holders You can see all information regarding passbook charges here"
+    },
+    {
+      "question": "how can i set a pin for my debit card?",
+      "answer": "You can set/ reset your Debit Card PIN by tapping on 'PIN' in the Card tab on the Jupiter app."
+    },
+    {
+      "question": "What is KYC?",
+      "answer": "KYC stands for 'Know Your Customer.' It is a process required by banks and financial institutions to verify your identity and address using documents like PAN, Aadhaar, or passport. This helps prevent fraud and ensures your account is secure."
+    },
+    {
+      "question": "How can I do KYC on Jupiter?",
+      "answer": "You can complete your KYC on Jupiter by following the in-app instructions. Usually, this involves uploading your documents and completing a quick Video KYC call through the app. Follow the prompts in the app for a step-by-step process."
+    }
+  ],
+  "Savings Account": {
+    "Account details": [
+      {
+        "question": "Where is my bank branch and what are my branch details?",
+        "answer": "Jupiter has partnered with Federal Bank for providing the savings account services. For any branch-related services, please reach out to our customer support team for guidance."
+      },
+      {
+        "question": "Where can I view details such as account number, IFSC, MICR, SWIFT Code, etc.?",
+        "answer": "To view your details: Go to Home Page → Settings → Account Details."
+      },
+      {
+        "question": "What are the charges for my Savings Account?",
+        "answer": "You can find the schedule of charges for your Savings account on our website. Your Federal Bank Savings Account on Jupiter may be a Zero Balance Account or may require a minimum balance as prescribed by Federal Bank. Charges may apply for non-maintenance of the minimum balance."
+      }
+    ],
+    "Account services": [
+      {
+        "question": "How can I get a chequebook?",
+        "answer": "Order a chequebook from the 'Statements and Services' section under Settings. It will be delivered to your communication address within 14 days. Your first 5 cheque leaves are free. If you hold a Salary Account, you get 20 free leaves every year. You can reorder a chequebook 15 days after placing an order."
+      },
+      {
+        "question": "How can I get the statement for my bank account?",
+        "answer": "Go to Settings → Account Services → Account Statement. Select the time period, format, and delivery method, then click 'Get Statement'."
+      }
+    ],
+    "Profile details": [
+      {
+        "question": "Can I update my phone number?",
+        "answer": "Yes, you can change your phone number registered with Jupiter from the account profile page in the App details section."
+      },
+      {
+        "question": "Can I edit my name or father's name?",
+        "answer": "Yes. You can edit this in the review details screen before you start your Video KYC."
+      },
+      {
+        "question": "How can I update my registered email address?",
+        "answer": "You can update your email address by going to Settings → Account Details → Profile → Edit Email Address."
+      },
+      {
+        "question": "How can I change my MPIN?",
+        "answer": "Go to Home Page → Settings → App Settings → Tap on mPIN Change. You will receive an email confirmation from us when you change it."
+      }
+    ]
   },
-  {
-    "question": "is 'jupiter bank' approved by the rbi?",
-    "answer": "Jupiter is itself not a bank and doesn’t hold or claim to hold a banking license. The Savings Account and VISA Debit Card are provided by Federal Bank - an RBI-licensed bank - and follow all security standards prescribed by RBI. All funds in your account are insured under the RBI’s deposit insurance scheme. Your money is always safe with Federal Bank"
+  "Linking Bank Accounts": {
+    "General": [
+      {
+        "question": "What does a 'Primary bank account' mean in UPI?",
+        "answer": "A 'Primary bank account' is the default account linked to your UPI ID for all your UPI transactions. It is the default choice for a UPI app to send or collect money."
+      },
+      {
+        "question": "Can I change the primary bank account for my UPI transactions on Jupiter?",
+        "answer": "Yes, you can change your primary bank account by following these steps: Visit the Payments tab and tap on UPI Payments → Tap on Manage UPI Accounts → Choose the account and mark it as primary."
+      },
+      {
+        "question": "How can I link my other bank accounts with my Jupiter UPI?",
+        "answer": "To add bank accounts to Jupiter UPI, go to the 'Payments' tab → Settings → Manage bank accounts (under UPI) → Add new account. Ensure that the mobile number linked to Jupiter matches the one linked to the bank account you wish to add."
+      },
+      {
+        "question": "Can I remove a bank account from Jupiter UPI?",
+        "answer": "Yes, you can remove a bank account linked to Jupiter UPI by navigating to Home → Settings → Payment Settings → UPI Settings → Manage Payees."
+      },
+      {
+        "question": "Why can't I see the option to set the UPI PIN after adding a bank account?",
+        "answer": "You will not be able to set UPI PIN for an added bank account if an old UPI PIN already exists. You can continue to use the old PIN or reset it. To reset your old PIN: Go to the 'Payments' tab → Settings → Manage bank accounts (under UPI) → Settings → Reset PIN."
+      },
+      {
+        "question": "Can anyone find out my bank account details if they get to know my UPI ID?",
+        "answer": "No, nobody can gain access to your bank account details with your UPI ID. The UPI ID is an identifier to uniquely map each user to their bank account and eliminates the need to share bank account details with others. The security of UPI is robust as the transaction happens in a highly encrypted format."
+      },
+      {
+        "question": "Can I link a joint savings account to my UPI ID?",
+        "answer": "You need to check with your bank if you can link your joint savings account to UPI. Some banks, such as HDFC, do not support linking to UPI for joint or multi-signatory accounts."
+      },
+      {
+        "question": "Can I add my NRE/NRO accounts to UPI?",
+        "answer": "Unfortunately, you cannot add NRE/NRO accounts on the Jupiter app yet."
+      }
+    ]
   },
-  {
-    "question": "how can i open a savings account?",
-    "answer": "To open a free Savings or Salary Bank Account on Jupiter - powered by Federal Bank - in 3 minutes, simply install the Jupiter App. Follow the on-screen instructions to create your account. To unlock the full Jupiter experience, complete your KYC in 5 minutes"
+  "Linking Credit Cards": {
+    "General": [
+      {
+        "question": "How can I link my RuPay credit card to Jupiter UPI?",
+        "answer": "To link your RuPay credit card to Jupiter UPI, go to Payment Tab → Settings → Link any RuPay Credit Card."
+      },
+      {
+        "question": "Is it safe to use credit cards with UPI apps?",
+        "answer": "UPI is a secure platform and your credit card information is encrypted when it is sent to your UPI app. The merchant only sees the final bank details, not your credit card information."
+      },
+      {
+        "question": "Can I link my Visa/Mastercard/Amex card on UPI?",
+        "answer": "Currently, you can only link your RuPay credit card to UPI."
+      },
+      {
+        "question": "Will I be charged for linking or paying from my linked credit card on UPI?",
+        "answer": "No, you will not be charged for linking or carrying out any transactions from the linked credit card on UPI."
+      },
+      {
+        "question": "Can I make my linked credit card the default account to receive funds?",
+        "answer": "No, you can only make payments with your linked credit card on UPI; you cannot receive funds."
+      },
+      {
+        "question": "Where can I see my linked RuPay credit cards on Jupiter?",
+        "answer": "To see your linked RuPay credit card on Jupiter, go to Payment Tabs → Settings → Manage UPI Accounts/Cards → Credit Tab."
+      },
+      {
+        "question": "Can I set up UPI payments if my mobile number on UPI is not linked to my RuPay credit card?",
+        "answer": "No, you can only link a credit card with the same registered mobile number as your UPI app."
+      }
+    ]
   },
-  {
-    "question": "how can i get a debit card?",
-    "answer": "You can order a new physical Debit Card by tapping on the ‘Card’ tab on the Jupiter app. While you can get a virtual Debit Card for free, you will be charged a one-time fee when ordering a physical Debit Card"
+  "Making payments": {
+    "Using credit cards": [
+      {
+        "question": "How can I make a payment with my RuPay credit card on Jupiter UPI?",
+        "answer": "Scan the merchant's UPI QR code, enter the amount, select your credit account, select your RuPay credit card account, and enter your UPI PIN."
+      },
+      {
+        "question": "Can I send money to another person or other credit card with UPI?",
+        "answer": "No, you can only pay merchants with your linked RuPay credit card."
+      },
+      {
+        "question": "What is the daily limit for UPI payments through RuPay credit cards?",
+        "answer": "The daily limit for RuPay credit cards on UPI is ₹1 Lakh."
+      },
+      {
+        "question": "Are there any restricted merchant categories on which I can't pay with RuPay Credit Card on UPI?",
+        "answer": "Yes, there are some categories like P2P, P2PM, digital account opening, lending platform, cash withdrawal at merchant, cash withdrawal at ATM, ERUPI, IPO, Foreign Inward Remittances, Mutual Funds and any other categories that are restricted by NPCI from time to time."
+      }
+    ],
+    "Using bank accounts": [
+      {
+        "question": "How do I send money via UPI on Jupiter?",
+        "answer": "Go to the 'Payments' tab from the home page, tap 'UPI Payments', enter the payee's UPI ID or scan the QR code, enter the amount (up to ₹1,00,000), add a note if you want, select the bank account, enter your UPI PIN, and confirm."
+      },
+      {
+        "question": "How do I request money via UPI on Jupiter?",
+        "answer": "Visit Payments tab, tap on UPI Payments, tap 'Request money', enter the payer's UPI ID, tap on 'Verify UPI ID', enter the amount (up to ₹2,000), add a note if you want, select the bank account, and confirm."
+      },
+      {
+        "question": "How can I make a self-transfer via UPI?",
+        "answer": "Go to the 'Payments' tab → Self-Transfer → Choose the bank accounts you want to transfer to and from → Hit Transfer → Enter UPI PIN. Ensure both accounts are linked to your Jupiter UPI."
+      },
+      {
+        "question": "How can I pay to my contacts via UPI?",
+        "answer": "Go to Payments Tab → Pay to Phone number → allow contact Permissions → search for name/number of your contact and if their Phone Number is set as UPI number on any UPI app then you can transfer the amount by selecting the Payee and entering the UPI PIN."
+      },
+      {
+        "question": "How can I pay to a Phone number via UPI?",
+        "answer": "Go to the Payments tab → Pay to Contact → Enter the receiver's UPI Phone number → Enter the amount → Continue → Enter UPI PIN. The phone number must be linked to a UPI ID."
+      },
+      {
+        "question": "What is the maximum amount I can send using UPI in one transaction?",
+        "answer": "You can send up to ₹1,00,000 via UPI in one go."
+      },
+      {
+        "question": "Does Jupiter UPI have any transfer limits?",
+        "answer": "Yes. Peer-to-peer transfers: First 24 hours after activating UPI: Up to ₹5,000 per transaction. After 24 hours: 10 transactions per day not exceeding ₹1,00,000 in total. Merchant transfers: Up to ₹2,00,000 per transaction."
+      }
+    ],
+    "Bill Payment": [
+      {
+        "question": "What bills can I pay through Jupiter?",
+        "answer": "Jupiter supports multiple bills like Electricity, Gas, Recharge, Postpaid, DTH and many more. You can explore the bill categories on the app by going to the 'Bills' Section from Homepage."
+      },
+      {
+        "question": "Does Jupiter show the latest information on my bills?",
+        "answer": "Jupiter Bill Payment fetches the latest information on your bill, every time you visit the registered bill page."
+      },
+      {
+        "question": "Will I get any notification / reminders when my payment is due?",
+        "answer": "Yes, you will get notifications on the days when your registered bills get generated."
+      },
+      {
+        "question": "How to raise a dispute on bill payment?",
+        "answer": "Go to 'Bill Statement' → Click on the bill → Click on Help button and raise your complaint / dispute."
+      },
+      {
+        "question": "The status of my bill shows as pending. What does it mean?",
+        "answer": "Do not worry, this status will be refreshed soon. The transaction status is taking time to update, please wait for 72 hours."
+      },
+      {
+        "question": "I am not getting my desired plan for the prepaid recharge.",
+        "answer": "The plans are provided by the telecom provider. Please check with payment provider for change of plans."
+      },
+      {
+        "question": "I initiated a bill payment but did not receive the transaction ID?",
+        "answer": "Please raise a dispute in help menu with Disposition as 'Amount debited but Transaction ID not generated.'"
+      }
+    ],
+    "Pay to Mobile": [
+      {
+        "question": "What is Pay to Mobile?",
+        "answer": "A 10 digit mobile number can be used as alias to alphanumeric UPI ID (abc@PSP). User can enter any mobile number/select any phone contact to make seamless transactions."
+      },
+      {
+        "question": "Can I transfer money to a person who is not on Jupiter?",
+        "answer": "Yes, you can transfer money to your friends/family with just their phone number/UPI ID. The primary bank account linked to the UPI ID will be credited with the amount paid."
+      },
+      {
+        "question": "How can I pay a mobile number?",
+        "answer": "Go to the Payments tab → Pay to Contact → Enter the receiver's phone number → Enter the amount → Continue → Enter UPI PIN. Note: When you send money to a mobile number, the money will be credited to the bank account that is linked to the UPI number/ID."
+      },
+      {
+        "question": "Can I pay my friend/family by adding a mobile number?",
+        "answer": "Yes, you can search the name of your friend/family in your contacts, select the contact and you can pay seamlessly."
+      },
+      {
+        "question": "Can I share payment confirmation after a transaction?",
+        "answer": "Once payment is successful, click on the share button on the top right and you can share the transaction details."
+      },
+      {
+        "question": "Can I receive money on my mobile number?",
+        "answer": "To receive money on your mobile number on the Jupiter app, go to Payments → Payment Settings → Manage UPI number → Create now."
+      },
+      {
+        "question": "When someone pays my Jupiter mobile number, where will the amount be credited?",
+        "answer": "Any money paid to your mobile number, the amount will be credited to the primary bank account linked to your Jupiter UPI ID."
+      }
+    ],
+    "UPI Transfer": [
+      {
+        "question": "What is a UPI ID or VPA?",
+        "answer": "A UPI ID or VPA (Virtual Payment Address) is a unique ID for a bank account that can be used to send and receive funds. It usually takes the form <unique_id>@<upi_handle>."
+      },
+      {
+        "question": "I transferred money to a wrong UPI ID. What can I do now?",
+        "answer": "Jupiter cannot assure this money will be returned as reversal is at the discretion of the receiver. If you know the receiver, request them to return the money. Otherwise, speak to your source bank and raise a request for reversal. If your source bank is the Federal Bank Savings Account on Jupiter, please reach out to our experts. This resolution can take up to 60 days."
+      },
+      {
+        "question": "What is a UPI Number?",
+        "answer": "A UPI number is an 8-9 digit unique number that allows you to receive money from people, across UPI apps. You can also use your 10-digit mobile number as your UPI number."
+      },
+      {
+        "question": "How can I create a UPI number on Jupiter?",
+        "answer": "To create a UPI number on the Jupiter app, go to Payments → Payment Settings → Manage UPI number → Create now."
+      },
+      {
+        "question": "How can I pay via UPI number?",
+        "answer": "Go to the Payments tab → Pay to Contact → Enter the receiver's phone number → Enter the amount → Continue → Enter UPI PIN. Note: When you send money to a UPI number, the money will be credited to the bank account that is linked to the UPI number/ID."
+      },
+      {
+        "question": "What is UPI Number cooling period?",
+        "answer": "If you have created a unique 8-9 digit UPI number and deleted it, it cannot be claimed by any other user for a cooling period of 6 months. In case you have used your 10-digit mobile number as your UPI number, other users cannot claim it even if you delete it."
+      },
+      {
+        "question": "How can I delete a UPI number on Jupiter?",
+        "answer": "To delete a UPI number, go to Payments → Payment Settings → Manage UPI number → Select UPI number → More options → Delete."
+      },
+      {
+        "question": "How can I disable a UPI number?",
+        "answer": "To disable a UPI number, go to Payments → Payment Settings → Manage UPI number → Select UPI number → More options → Disable."
+      },
+      {
+        "question": "How many UPI numbers can I create for one UPI ID?",
+        "answer": "You can create up to 3 UPI numbers for a UPI ID. This can be your mobile number, or any 8-9 digit unique numeric ID you choose."
+      }
+    ]
   },
-  {
-    "question": "how to deposit cash in the savings account?",
-    "answer": "To deposit cash into your Savings or Salary Bank Account, visit any Federal Bank branch. You can find the nearest branch here: https://locations.federalbank.co.in/"
+  "Auto-Pay": {
+    "Setting up Auto-Pay": [
+      {
+        "question": "What are the limits on UPI Auto-Pay?",
+        "answer": "Auto-Pay does not require authentication for recurring transactions less than INR 15,000. For transactions above INR 15,000, you'll have to verify the payment via your UPI PIN every time."
+      },
+      {
+        "question": "Where can I check the status of UPI Auto-Pays I've created?",
+        "answer": "The current status of UPI Auto-Pays can be viewed in the 'Manage Auto-Pay' section of the UPI app."
+      },
+      {
+        "question": "Can a merchant create an Auto-Pay for a customer?",
+        "answer": "Yes, any merchant can create an Auto-Pay once it has been given authorisation by a customer using their UPI PIN."
+      },
+      {
+        "question": "What if I do not authorise the UPI Auto-Pay 'collect' request?",
+        "answer": "If the Auto-Pay request is not approved/authorised, it will expire and the Auto-Pay will not be created."
+      },
+      {
+        "question": "What if my account has insufficient balance while creating a UPI Auto-Pay?",
+        "answer": "The transaction will be declined by the issuing bank and no Auto-Pay will be created."
+      },
+      {
+        "question": "Do I need to enter a UPI PIN for a UPI Auto-Pay to be successful?",
+        "answer": "You don't need to authenticate your UPI PIN for one-time UPI Auto-Pays less than INR 15,000. For UPI Auto-Pays more than INR 15,000, a UPI PIN authentication prompt will be sent to approve the transaction every time."
+      },
+      {
+        "question": "When should I expect the execution of a UPI Auto-Pay?",
+        "answer": "The amount for your Auto-Pay will be debited during the period chosen while setting up the Auto-Pay. You can choose a particular date or a period duration in between which the amount will be debited."
+      },
+      {
+        "question": "When will I receive the pre-debit notification for UPI Auto-Pay?",
+        "answer": "A pre-debit notification will be sent to your registered mobile number 24-48 hours before the due date of any recurring UPI Auto-Pays."
+      },
+      {
+        "question": "Where can I check the status of active requests on my Jupiter UPI App?",
+        "answer": "The status of the active requests can be viewed in the Auto-Pay / Mandates section of your Jupiter UPI app. Go to: Settings → Payment Settings → Manage Auto-Pay/Mandate."
+      }
+    ],
+    "Managing Auto-Pay": [
+      {
+        "question": "Can I modify a UPI Auto-Pay?",
+        "answer": "Only the party who created the UPI Auto-Pay (merchant or broker app/website) can initiate its modification request."
+      },
+      {
+        "question": "How will I know my UPI Auto-Pay has been modified successfully?",
+        "answer": "You'll receive a confirmation from Jupiter after your UPI Auto-Pay has been modified successfully. The updated details will also be visible in the Manage Auto-Pay section of the app."
+      },
+      {
+        "question": "Whom do I need to approach if I have issues with the created UPI Auto-Pay?",
+        "answer": "While you may need to contact your issuing bank for the UPI Auto-Pay, please reach out to customer support team for assistance first."
+      },
+      {
+        "question": "What does cancelling a UPI AutoPay mean and when can this take place?",
+        "answer": "When an Auto-Pay is cancelled, money will no longer be auto-debited from your account to the specified person or merchant. If any amount was previously blocked, it will be unblocked and all future debit requests will be cancelled for the corresponding UPI Auto-Pay. Cancellation can be initiated by the user or the merchant, if the service is not going to be delivered."
+      },
+      {
+        "question": "Can a merchant revoke a UPI Auto-Pay?",
+        "answer": "Yes, merchants or brokers can cancel an Auto-Pay. In this case, your bank will unblock the relevant amount for a one-time Auto-Pay or cancel future debit requests for recurring Auto-Pays."
+      },
+      {
+        "question": "What happens if a UPI Auto-Pay is not cancelled? Will I know when it has been cancelled?",
+        "answer": "If a UPI Auto-Pay fails, it can only be reinitiated from the merchant's end. Please contact the merchant for more details."
+      },
+      {
+        "question": "Can I pause a subscription or AutoPay registered on my Jupiter App?",
+        "answer": "Yes, you can pause an Auto-Pay. Once paused, the subsequent due payments will not be auto-debited from your account. To pause or resume an Auto-Pay, go to Settings → Payment Settings → Manage Auto-Pay."
+      }
+    ]
   },
-  {
-    "question": "how can i transfer money from jupiter?",
-    "answer": "There are many ways to transfer money from Jupiter. You may use the Scan & Pay for UPI transfers, pay via your Debit Card, or use your Cheque Book for sending money. You can also use Bank Transfers on Jupiter to transfer money. Jupiter offers 4 different modes for bank transfers - 1. Internal Fund transfer (for Inter Bank) 2. NEFT 3. IMPS 4. RTGS Jupiter automatically selects the best mode for transfer when you enter payee and transaction information You can see all information regarding transfer Fees and Charges here"
+  "Payments": {
+    "General": [
+      {
+        "question": "What do I do if the merchant or payee hasn't received my UPI payment but is showing success on my app and amount was deducted from my bank account?",
+        "answer": "UPI transactions are settled immediately and only in exceptional situations, they may take up to 48 hours. If the transaction is successful on Jupiter, it should get credited to the payee within 48 hours. If the amount is still not credited, please reach out to your source bank. If your source bank is the Federal Bank Savings Account on Jupiter, please reach out to our expert support team."
+      },
+      {
+        "question": "I transferred money to a wrong UPI ID. What can I do now?",
+        "answer": "Jupiter cannot assure this money will be returned as reversal is at the discretion of the receiver. If you know the receiver, request them to return the money. Otherwise, speak to your source bank and raise a request for reversal. If your source bank is the Federal Bank Savings Account on Jupiter, please reach out to our experts. This resolution can take up to 60 days."
+      },
+      {
+        "question": "What do I do if my UPI payment has failed but the amount has been deducted from my bank account?",
+        "answer": "Failed UPI transactions are auto-reversed immediately and only in exceptional situations, they may take up to 2 working days for a peer-to-peer transaction, and 5 working days for a merchant transaction. If the amount is still not credited to the payee or hasn't been reversed to you yet, please get in touch with your source bank. If your source bank is the Federal Bank Savings Account on Jupiter, please reach out to our experts."
+      },
+      {
+        "question": "How much time does it take for my bank transfers to be completed?",
+        "answer": "IMPS and IFT transfers are instant. NEFT transfers are settled every 30 minutes and may take up to 2 hours. RTGS is instant if made before the cut-off time, otherwise it's settled on the next working day."
+      },
+      {
+        "question": "What can I do if my Bank Transfer fails?",
+        "answer": "Try again after some time or use a different mode, such as UPI, to transfer money. Any amount, if deducted, will be reversed to your account within 2 working days. If it is not reversed, please chat with our experts."
+      },
+      {
+        "question": "How can I setup Auto-Pay through a bank transfer?",
+        "answer": "Click on the payments tab, click on manage Auto-Pay, click on set Auto-Pay, select or add a payee and complete the amount, frequency, start and end date details and enter your MPIN to setup your Auto-Pay."
+      }
+    ]
   },
-  {
-    "question": "is jupiter a bank?",
-    "answer": "Jupiter is itself not a bank and doesn’t hold or claim to hold a banking license. The Savings Account and VISA Debit Card are provided by Federal Bank and follows all security standards as applicable. All funds in your account are insured up to the approved limit by DICGC. Your money is always safe with Federal Bank Jupiter enables you to make smart money decisions every day using easy, intuitive, and personalized money management tools that help eliminate the stress, fear and confusion that comes with managing money. You can start using Jupiter by doing any of the following… Opening a free no minimum balance Savings Bank Account on Jupiter - powered by Federal Bank - in 3 minutes Get 5x Cashback on spends* Or, opening a free Salary Bank Account on Jupiter - powered by Federal Bank Withdraw your salary any day with On-Demand Salary Get free health insurance up to Rs. 2,00,000 Get 5x Cashback on spends*"
+  "Loans": {
+    "General": [
+      {
+        "question": "How do I apply for a loan on Jupiter?",
+        "answer": "To avail Personal Loans or Mini Loans on Jupiter: Click on 'Apply now' in the Loans section of the app, enter your details to check your loan eligibility, choose the required amount and repayment plan, set up Auto-pay for automatic loan repayments, and the requested amount gets credited to your selected account."
+      },
+      {
+        "question": "Do I need any documents to apply for a Loan on Jupiter?",
+        "answer": "No. You do not need any documents to apply for Loans on Jupiter."
+      },
+      {
+        "question": "What is the difference between Mini Loans and Personal Loans?",
+        "answer": "Mini Loan is a 0% interest loan with a duration of up to 45 days. Personal loans are longer duration loans that you can repay in 3-24 EMIs."
+      },
+      {
+        "question": "Are there any charges on taking a Loan?",
+        "answer": "Yes, Jupiter charges a processing fee every time you avail Personal loans or Mini Loans. In case of Personal loans with EMIs, interest is also applicable on the loan amount."
+      },
+      {
+        "question": "How many times can I take a Loan on Jupiter?",
+        "answer": "You can withdraw loans as many times as you want provided that your earlier loans (if any) are repaid."
+      },
+      {
+        "question": "Can I pay my EMI before the due date?",
+        "answer": "Yes, you can pay your EMI before the due date. No additional charges apply."
+      },
+      {
+        "question": "What is the Late Fee if I fail to make my repayment on time?",
+        "answer": "A one-time fee of INR 300 will be charged for missed payments on the due dates, in addition to an annual interest rate of 36% on the overdue amount, plus applicable GST."
+      },
+      {
+        "question": "What can I do if the auto debit for the due amount fails?",
+        "answer": "If your due amount is not auto debited, you can pay it manually."
+      },
+      {
+        "question": "If I have setup Auto-Pay, but I made the repayment for the Loan before the due date, will the amount be deducted twice?",
+        "answer": "No. If you repay before the due date, Jupiter will automatically cancel your Auto-Pay for this particular repayment."
+      },
+      {
+        "question": "What happens if my account balance is insufficient for repayment?",
+        "answer": "Auto-repayment will fail and you will have to manually pay the due amount. Maintain sufficient funds in your account to avoid any auto-repayment failures."
+      },
+      {
+        "question": "Can I repay early and take a Loan again?",
+        "answer": "Yes, you can take a Loan again as soon as you fully repay your current loan."
+      },
+      {
+        "question": "Can I close my loan before the closure date?",
+        "answer": "Yes, you can close your loan early. However, foreclosure fees may apply. Please check your loan agreement for details."
+      },
+      {
+        "question": "Where can I get my NOC for closed loans?",
+        "answer": "You can download your NOC from the Jupiter app by navigating to Loans, then selecting loan history, choosing the specific loan, and clicking on download. If unavailable, please contact customer support."
+      }
+    ]
   },
-  {
-    "question": "what is jupiter’s whatsapp number?",
-    "answer": "Jupiter at the moment doesn’t offer WhatsApp support. For any help or feedback, you can chat with us via the Jupiter app for instant support. You can also email us at support@jupiter.money or call us on our helpline number"
+  "Money": {
+    "General": [
+      {
+        "question": "What is the Cashflow, Net Worth, and Credit Card tab?",
+        "answer": "The Bank Accounts tab lets you view all your transactions, balances, and insights by connecting your bank accounts. The Credit Card tab provides detailed insights into your credit card usage, including statements and spending patterns, when you link your credit card. The Net Worth tab displays the total of all your assets and debts, giving you a consolidated view of your financial health."
+      },
+      {
+        "question": "How do I add a new bank account for tracking?",
+        "answer": "Click on the '+' or 'Add Account' button anywhere on the page, or go to 'Settings' and select 'Tracked Accounts.' Follow the steps to connect your new account securely via RBI's Account Aggregator network."
+      },
+      {
+        "question": "How do I categorise a transaction?",
+        "answer": "We try to automatically categorise all transactions. If a transaction is uncategorised or misclassified, tap on it to go to the details page and choose the correct category. We'll remember the category for next time."
+      },
+      {
+        "question": "How often is my data updated?",
+        "answer": "Your Jupiter accounts (savings, cards, loans) update in real-time. External bank accounts update once a day. External loans refresh every 30 days. Your credit card data is updated every time a new statement is fetched. There might be delays from external sources."
+      },
+      {
+        "question": "Is my financial data secure?",
+        "answer": "Absolutely. We use state-of-the-art encryption and security measures to ensure your financial data is protected at all times."
+      },
+      {
+        "question": "Can I set budgets and get alerts for overspending?",
+        "answer": "Yes, you can set a monthly budget to measure your total spends. We will alert you if you are close to or have exceeded your budget. You can turn these alerts on or off from the settings page."
+      },
+      {
+        "question": "How much budget should I set?",
+        "answer": "Experts recommend setting a budget of under 70% of your monthly post-tax income. This should cover both fixed and variable expenses."
+      },
+      {
+        "question": "How do I remove an account from tracking?",
+        "answer": "Go to 'Balances' → Select the account you want to remove → Click 'Account details' → Choose 'Stop Tracking'. This will direct you to FinVu's page, where you can revoke your consent."
+      },
+      {
+        "question": "Can I track cash transactions or manually add/edit transactions?",
+        "answer": "No, you cannot track or edit cash transactions. Use the ATM category to track ATM deposits and withdrawals."
+      },
+      {
+        "question": "What should I do if I find a loan I don't want to track or if its details are incorrect?",
+        "answer": "Go to the loan's detail page and choose 'Update Info' or 'Stop Tracking.'"
+      }
+    ]
   },
-  {
-    "question": "how can i apply for a credit card on jupiter",
-    "answer": "You can apply for the Edge Federal Bank Credit Card or Edge CSB Bank Credit Card exclusively on Jupiter"
+  "Safety": {
+    "General": [
+      {
+        "question": "What happens if I block a receiver's UPI ID?",
+        "answer": "If you block someone's UPI ID, you cannot send or request money from them via UPI until you unblock them. Any existing transfer requests will get automatically declined."
+      },
+      {
+        "question": "How do I block a payee's UPI ID?",
+        "answer": "You can block a payee's UPI ID from the UPI Transaction History. Go to the 'Payments' tab on the home page, tap 'UPI Payments', tap 'All UPI transactions', select the transaction, choose 'Block' and confirm."
+      },
+      {
+        "question": "How do I unblock a payee's UPI ID?",
+        "answer": "You can unblock a UPI ID by navigating to Payments → UPI Payments → Settings → Manage Payees. Choose the blocked payee and confirm that you wish to unblock it."
+      },
+      {
+        "question": "What are some helpful tips to make my Jupiter UPI payments safe?",
+        "answer": "Never share your UPI PIN with anyone. Download only trusted apps for UPI payments. Be cautious of sharing your UPI PIN on websites or forms sent to you via a link. For support, reach out only to the Help/Support section in your UPI application. You do not need to enter your UPI PIN to receive money."
+      },
+      {
+        "question": "How do I safeguard myself from phishing fraud?",
+        "answer": "Phishing is when someone pretends to be someone else to get your personal information. Jupiter never asks you to share personal information such as payment account numbers, PINs or passwords over email, SMS, phone call or chat."
+      },
+      {
+        "question": "How do I safeguard myself from spoofing fraud?",
+        "answer": "Spoofing is when someone fakes the identity of an email sender. On Gmail, tap the 'Expand' icon below the name of the sender in the email and check the sender's actual email address. Make sure the 'From' and the 'Reply to' email addresses match."
+      },
+      {
+        "question": "Who are verified merchants for UPI?",
+        "answer": "The merchants who have listed their UPI ID with NPCI are considered as verified merchants (as per official definition of UPI system)."
+      }
+    ]
   },
-  {
-    "question": "how can i get a federal bank passbook?",
-    "answer": "You can request for a passbook by visiting your nearest Federal Bank branch. Please note that the passbook is chargeable and is available only to verified account holders You can see all information regarding passbook charges here"
+  "Money & Networth": {
+    "Getting Started": [
+      {
+        "question": "What is the Bank Accounts, Net Worth, and Credit Card tab?",
+        "answer": "Bank Accounts Tab: View all your transactions, balances, and insights by connecting your bank accounts. Credit Card Tab: Get detailed insights into your credit card usage, including statements and spending patterns. Net Worth Tab: See a consolidated view of your financial health by tracking all your assets and debts."
+      },
+      {
+        "question": "How often is my data updated?",
+        "answer": "Accounts on Jupiter (savings, cards, loans): Realtime updates. External bank accounts: Updated once a day. External loans: Refreshed every 30 days. Credit card data: Updated when a new statement is fetched. Note: Delays may occur due to external sources."
+      }
+    ],
+    "Tracking bank accounts": [
+      {
+        "question": "How do I add a new bank account for tracking?",
+        "answer": "Click on the '+' or 'Add Account' button anywhere on the page, or go to 'Settings' → 'Tracked Accounts.' Follow the steps to connect your new account securely via RBI's Account Aggregator network."
+      },
+      {
+        "question": "How do I remove an account from tracking?",
+        "answer": "Go to Balances → Select the account you want to remove → Click 'Account details' → Choose 'Stop Tracking'. You'll be redirected to FinVu's page to revoke your consent."
+      }
+    ],
+    "Tracking credit cards": [
+      {
+        "question": "How do I connect my credit cards for tracking?",
+        "answer": "To connect your credit cards, go to the Cards tab and click on 'Add Credit Card'."
+      },
+      {
+        "question": "Can I update the status of my credit card if I've stopped using it?",
+        "answer": "Yes. Go to: All Cards → Manage Card for the card you need to update. Scroll down and select 'Update Status'. For incorrect credit limits, transactions, or billing dates, contact support."
+      },
+      {
+        "question": "How does Jupiter track my credit cards?",
+        "answer": "Jupiter analyses your credit card statements from your inbox to provide insights on spending patterns, top categories, fees & charges, new bills."
+      }
+    ],
+    "Tracking spends": [
+      {
+        "question": "How do I categorise a transaction?",
+        "answer": "We automatically categorise transactions. If one is uncategorised or misclassified, tap it to open the details page and select the correct category. We'll remember it for future transactions."
+      },
+      {
+        "question": "Can I set budgets and get alerts for overspending?",
+        "answer": "Yes, you can set a monthly budget to track your spending. Alerts will notify you if you are close to or have exceeded your budget. You can enable or disable alerts from the settings page."
+      },
+      {
+        "question": "How much budget should I set?",
+        "answer": "Experts suggest setting a budget of under 70% of your monthly post-tax income to cover both fixed and variable expenses."
+      },
+      {
+        "question": "Can I track cash transactions or manually add/edit transactions?",
+        "answer": "No, you cannot manually track or edit cash transactions. Use the ATM category to track ATM deposits and withdrawals."
+      },
+      {
+        "question": "How can I change a transaction's category?",
+        "answer": "Select the relevant transaction and choose a category from the list of available categories. The categories differ depending on whether it's a debit or credit transaction."
+      }
+    ],
+    "Data security": [
+      {
+        "question": "Is my financial data secure?",
+        "answer": "Absolutely. We use state-of-the-art encryption and security measures to protect your data at all times."
+      }
+    ]
   },
-  {
-    "question": "how can i set a pin for my debit card?",
-    "answer": "You can set/ reset your Debit Card PIN by tapping on ‘PIN’ in the Card tab on the Jupiter app."
+  "Protect": {
+    "Fraud Protect": {
+      "Product Details": [
+        {
+          "question": "What pin codes are covered by 'Fraud Protect' product?",
+          "answer": "The services are available across India, except for island regions."
+        },
+        {
+          "question": "How can I use these services? Do I need the OneAssist app, or can I use the website?",
+          "answer": "For OTT requests: You can make a service request through the OneAssist app by logging in with your registered mobile number. For card blocking, PAN/DL replacement, and reporting card, e-wallet, or UPI fraud: You can make a service request by calling One Assist toll-free number - 1800 123 3330."
+        }
+      ],
+      "One Call Assistance": [
+        {
+          "question": "How do I get my login information?",
+          "answer": "You can use your name and mobile number to log in to the One Assist app."
+        },
+        {
+          "question": "How long before I can use my login details?",
+          "answer": "You can log in anytime using your registered mobile number and a One-Time Password (OTP)."
+        },
+        {
+          "question": "Should I contact OneAssist support with questions about redeeming a service?",
+          "answer": "To request a service, you can use the OneAssist app and log in with your registered mobile number."
+        },
+        {
+          "question": "How can I contact OneAssist customer support?",
+          "answer": "You can call OneAssist toll-free helpline at 1800-123-3330."
+        },
+        {
+          "question": "Can I use this service for someone else in my family?",
+          "answer": "No, this plan only covers the person who bought it."
+        },
+        {
+          "question": "How do I contact support in an emergency?",
+          "answer": "You can make a service request through the OneAssist app by logging in with your registered mobile number."
+        },
+        {
+          "question": "What kind of emergencies assistance does this service cover?",
+          "answer": "If you lose your wallet/cards and are traveling, you will be provided with assistance to pay for your hotel and flight tickets."
+        },
+        {
+          "question": "How can I reach a representative at any time?",
+          "answer": "OneAssist customer care is available 24/7. You can call OneAssist toll-free number to make a request."
+        },
+        {
+          "question": "How quickly can I get help in an emergency?",
+          "answer": "OneAssist will provide the fastest possible service for all covered benefits."
+        }
+      ],
+      "Card Blocking": [
+        {
+          "question": "What should I do if my card is lost or stolen?",
+          "answer": "You can request to block your card by calling OneAssist toll-free number 1800-123-3330."
+        },
+        {
+          "question": "Can I block my card if I haven't registered it?",
+          "answer": "Yes, even the cards not registered with OneAssist can be blocked, the Customer care team will guide you through the process."
+        },
+        {
+          "question": "Will my card be blocked right away when I contact support?",
+          "answer": "Yes, customer care will block your card as soon as you make the request."
+        },
+        {
+          "question": "Do I need to contact my bank separately?",
+          "answer": "No, that's not necessary. OneAssist will notify the relevant banks and have your card blocked for you."
+        },
+        {
+          "question": "Will the bank confirm that my card has been blocked?",
+          "answer": "Yes, the banks will notify you that your card has been blocked, using the communication methods you've chosen with them (email or SMS)."
+        }
+      ],
+      "Card Fraud Protection": [
+        {
+          "question": "How do I report fraudulent card transactions?",
+          "answer": "If you discover fraudulent transactions, you can make a service request by calling our toll-free number within 24 hours."
+        },
+        {
+          "question": "How do I know if my card fraud claim is eligible for protection?",
+          "answer": "You are eligible for claims related to both offline and online card fraud, including online fraud, phishing, and transactions at ATMs or physical stores."
+        },
+        {
+          "question": "Am I covered for fraudulent transactions that happened before I reported them?",
+          "answer": "You are covered for transactions up to 30 days before reporting, as long as those 30 days fall within your plan period."
+        },
+        {
+          "question": "What should I do if I think my card has been used fraudulently?",
+          "answer": "You should make a service request by calling OneAssist toll-free number within 24 hours of discovering the fraud."
+        },
+        {
+          "question": "Can you explain the detailed process?",
+          "answer": "You can call OneAssist Customer care at 1800-123-3330 and intimate the claim. OneAssist will guide you and share the set of documents required for raising claim. Post document submission, OneAssist will raise the claim with the Insurance Company. Once the claim is approved OneAssist will collect bank account details of the customer and the payment will be disbursed to the account."
+        },
+        {
+          "question": "How often can I use this service in a month?",
+          "answer": "You can use the service once per month."
+        }
+      ],
+      "UPI/M": [
+        {
+          "question": "How do I report unauthorized transactions on my UPI or wallet account?",
+          "answer": "You can make a service request by calling our toll-free number within 24 hours of discovering the fraud."
+        },
+        {
+          "question": "Am I covered for transactions that happened before I reported the fraud?",
+          "answer": "You are covered for transactions up to 10 days before reporting, as long as those 10 days are within your plan period."
+        },
+        {
+          "question": "What should I do immediately after discovering a fraudulent UPI/M-Wallet transaction?",
+          "answer": "You should make a service request by calling our toll-free number within 24 hours of discovering the fraud."
+        },
+        {
+          "question": "Can you explain the detailed process?",
+          "answer": "You can call OneAssist Customer care at 1800-123-3330 and intimate the claim. OneAssist will guide you and share the set of documents required for raising claim. Post document submission, OneAssist will raise the claim with the Insurance Company. Once the claim is approved OneAssist will collect bank account details of the customer and the payment will be disbursed to the account."
+        },
+        {
+          "question": "How long do I have to report fraud to be covered by this protection?",
+          "answer": "Please report the fraud within 24 hours of discovering it."
+        }
+      ],
+      "PAN and DL": [
+        {
+          "question": "How do I request a replacement for my PAN or Driver's License (DL) if it's lost or stolen?",
+          "answer": "You can make a service request by calling our toll-free number within 24 hours of discovering the loss."
+        },
+        {
+          "question": "What documents are needed to replace my PAN/DL?",
+          "answer": "For PAN replacement, you'll need: a copy of your old PAN card and your PAN card number, the front and back of your Aadhaar card, your signature on a blank white paper, one passport-sized photo, and any other documents required by the regulatory body. For DL replacement, you'll need: two passport-sized photographs, address proof, your DL number or a copy of your old DL, a First Information Report (FIR), and any other documents required by the regulatory body."
+        },
+        {
+          "question": "Are there any extra fees for the PAN/ DL replacement?",
+          "answer": "No, you don't have to pay any extra fees."
+        },
+        {
+          "question": "How long does it take to get my replacement PAN card or Driver's License?",
+          "answer": "You should receive it within 7-10 days of making the request."
+        }
+      ],
+      "OTT Benefits": [
+        {
+          "question": "How do I request my OTT subscription voucher(s)?",
+          "answer": "You can make a service request through the OneAssist app by logging in with your registered mobile number."
+        },
+        {
+          "question": "Can you explain the redemption process?",
+          "answer": "Log in to the OneAssist app. After you request the OTT code, you'll receive a code in the chat. Use this code on the aggregator's website or app to get your OTT voucher. Then, use the voucher from the aggregator's website or app to activate your OTT membership by downloading the OTT app or logging in on the website."
+        }
+      ]
+    },
+    "Screen Protect": [
+      {
+        "question": "When does the plan begin?",
+        "answer": "Coverage kicks in 7 days after purchase and lasts for 30 days. You'll be notified when it's active."
+      },
+      {
+        "question": "Which devices are eligible?",
+        "answer": "All Android and iPhones, up to 3 years old, regardless of brand."
+      },
+      {
+        "question": "What's covered?",
+        "answer": "Only the screen. If it's cracked or damaged, you're covered up to ₹3,000."
+      },
+      {
+        "question": "Who handles the repair?",
+        "answer": "Your phone is repaired at a brand-authorized service center using genuine parts."
+      },
+      {
+        "question": "How do I raise a claim?",
+        "answer": "Just call +91 8510021818 or email assure@zopper.com. We'll guide you through the next steps."
+      },
+      {
+        "question": "Will I have to pay anything extra?",
+        "answer": "Only if your repair bill exceeds ₹3,000. If that happens, you'll be informed before repair begins."
+      },
+      {
+        "question": "What's not included?",
+        "answer": "Screens already damaged before buying the plan, cosmetic wear (like buttons or casing), any non-screen issues, intentional or careless damage."
+      },
+      {
+        "question": "Can I cancel or transfer the plan?",
+        "answer": "This plan is non-refundable and non-transferable. It's tied to your device."
+      },
+      {
+        "question": "Is my data protected?",
+        "answer": "Yes. Zopper follows strict data security protocols. Still, we recommend backing up your phone before sending it in."
+      },
+      {
+        "question": "Is water damage covered?",
+        "answer": "No. This plan is designed only to cover physical screen damage. If water affects internal parts (like motherboard or battery), it won't be covered—even if the screen gets damaged in the process."
+      },
+      {
+        "question": "What if my phone was dropped and got totally smashed?",
+        "answer": "If the screen is damaged, you're covered up to ₹3,000. But if internal parts (like battery, camera, sensors) are also broken, you'll need to pay for those separately. Repairs only happen if you approve the full service. No partial fixes."
+      },
+      {
+        "question": "My screen stopped responding to touch. Is that covered?",
+        "answer": "Yes, if it happened due to physical damage to the screen. Touch issues caused by screen cracks or falls are eligible under this plan."
+      },
+      {
+        "question": "Can I buy this plan if my screen already has a crack?",
+        "answer": "No. If your screen is already damaged, even slightly, the plan won't apply. Only new or undamaged screens can be covered."
+      },
+      {
+        "question": "What if I had my phone repaired at a local shop earlier?",
+        "answer": "If your phone was tampered with by a non-authorized service center before raising a claim, the plan becomes invalid. No exceptions—even if the tampering was unrelated to screen damage."
+      },
+      {
+        "question": "Are backlight issues covered?",
+        "answer": "Yes, but only if they're a direct result of screen damage. If the screen broke and the backlight failed too, it's covered. If it's an internal fault not caused by screen damage, it's not."
+      },
+      {
+        "question": "My phone's touch isn't working, but the display is fine. Am I covered?",
+        "answer": "Yes. That's likely a digitizer issue, which is part of the screen assembly. If it's due to screen damage, the plan has your back."
+      },
+      {
+        "question": "What about dead pixels on my screen?",
+        "answer": "Not covered. Dead pixels are usually due to wear and tear or manufacturing defects, and this plan only covers accidental screen damage."
+      }
+    ]
+  },
+  "Transaction Issues": {
+    "General": [
+      {
+        "question": "What do I do if my UPI payment has failed but the amount has been deducted from my bank account?",
+        "answer": "Failed UPI transactions are auto-reversed immediately and only in exceptional situations, they may take up to 2 working days for a peer-to-peer transaction, and 5 working days for a merchant transaction. If the amount is still not credited to the payee or hasn't been reversed to you yet, please get in touch with your source bank. If your source bank is the Federal Bank Savings Account on Jupiter, please contact our customer support team."
+      },
+      {
+        "question": "Why can't I see a successful UPI credit transaction made to my account?",
+        "answer": "Money gets credited to the account instantly after a UPI transaction is successful. However, it may take up to an hour for transfers to get credited to your Federal Bank Savings account on Jupiter when made from other banking apps."
+      },
+      {
+        "question": "What do I do if goods/services are not provided by merchant after successful payment via Jupiter UPI?",
+        "answer": "Speak to the merchant directly to recover the amount. Once a refund is initiated by the merchant, the amount will be credited to your account within 10 working days. In case money is not credited, please reach out to our customer support team."
+      },
+      {
+        "question": "What should I do if I haven't received a refund from the merchant after cancelling/returning an order?",
+        "answer": "Once a refund has been initiated by the merchant, the amount will be credited to your account within 10 working days for a UPI transaction. If the issue persists, please chat with our customer support team."
+      },
+      {
+        "question": "I see a suspicious or unauthorised UPI transaction in my account. What do I do?",
+        "answer": "Check the bank account linked to the UPI handle. Lodge a complaint with the linked bank. If your source bank is the Federal Bank Savings Account on Jupiter, please contact our customer support team."
+      },
+      {
+        "question": "What do I do if my UPI transaction is stuck in processing state?",
+        "answer": "UPI transactions are settled immediately and only in exceptional situations, they may take up to 3 working days. If the transaction is still in processing even after 3 working days, please reach out to your source bank. If your source bank is the Federal Bank Savings Account on Jupiter, please contact our customer support team."
+      },
+      {
+        "question": "What do I do if the merchant or payee hasn't received my UPI payment but is showing success on my app and amount was deducted from my bank account?",
+        "answer": "UPI transactions are settled immediately and only in exceptional situations, they may take up to 3 working days. If the transaction is successful on Jupiter, it should get credited to payee within 3 working days. If the amount is still not credited, please reach out to your source bank. If your source bank is the Federal Bank Savings Account on Jupiter, please contact our customer support team."
+      }
+    ]
   }
-]
+}

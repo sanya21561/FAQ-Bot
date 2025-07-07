@@ -56,15 +56,17 @@ if user_query:
         st.markdown("**Related questions:**")
         cols = st.columns(len(result['related_questions']))
         for i, q in enumerate(result['related_questions']):
-            if cols[i].button(q, key=f"related_{i}"):
-                st.session_state['user_query'] = q
+            label = q['question']
+            if cols[i].button(label, key=f"related_{i}"):
+                st.session_state['user_query'] = q['question']
                 st.session_state['translated_answer'] = ''
                 st.rerun()
     with st.expander("Show thinking process (retrieved FAQ, prompt, etc.)"):
         st.markdown("---")
-        st.subheader("Best Match from FAQ")
-        st.markdown(f"**Q:** {result['retrieved_faq']['question']}")
-        st.markdown(f"**A:** {result['retrieved_faq']['answer']}")
+        st.subheader("Top Retrieved FAQs")
+        for faq in result['retrieved_faqs']:
+            st.markdown(f"**Category:** {faq.get('category', 'General')} | **Subcategory:** {faq.get('subcategory', '-')}\n**Q:** {faq['question']}\n**A:** {faq['answer']}")
+            st.markdown("---")
         st.subheader("System Prompt to LLM")
         st.code(result['system_prompt'], language='markdown')
         st.markdown("---")
